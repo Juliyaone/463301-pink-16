@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Приложение «Pink»</title>
+  </head>
+      <body>
+        <header class="page-header">
+          <div class="page-header__wrapper">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="#" width="77" height="23" alt="Логотип приложения «Pink»"/>
+            </a>
+                <nav class="page-header__main-nav main-nav">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                    <ul class="main-nav__list site-list">
+                      <li class="site-list__item">
+                        <a>Главная</a>
+                      </li>
+                      <li class="site-list__item">
+                        <a href="photo.html">Фотографии</a>
+                      </li>
+                      <li class="site-list__item site-list__item--active">
+                        <a href="form.html">Конкурс</a>
+                      </li>
+                      <li class="site-list__item">
+                        <a href="https://htmlacademy.ru/">Html academy</a>
+                      </li>
+                    </ul>
+                </nav>
+            <h1 class="page-header__title-form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
+        </header>
+        <main class="form-page">
+            <h2 class="form-page__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! </h2>
+
+          <form class="form-page__form" method="get" action="https://echo.htmlacademy.ru">
+
+              <fieldset class="form-page__full-name">
+                <ul class="full-name__list">
+                  <li class="full-name__item">
+                    <label for="full-name-surname">Фамилия</label>
+                    <input type="text" name="surname" id="full-name-surname" placeholder="Укажите фамилию *"/>
+                  </li>
+                  <li class="full-name__item">
+                    <label for="full-name-name">Имя</label>
+                    <input type="text" name="name" id="full-name-name" placeholder="Введите ваше имя *"/>
+                  </li>
+                  <li class="full-name__item>
+                    <label for="full-name-patronymic">Отчество</label>
+                    <input type="text" name="patronymic" id="full-name-patronymic" placeholder="Ну и отчество тоже"/>
+                  </li>
+                </ul>
+              </fieldset>
+
+            <fieldset class="form-page__form-checkbox">
+              <legend class="form-checkbox__title">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="form-checkbox__list">
+                  <li class="form-checkbox__item">
+                      <label for="form-checkbox__selfie" aria-label="Сделал селфи с акулой">Сделал селфи с акулой</label>
+                      <input type="checkbox" name="" id="form-checkbox__selfie" checked/>
+                    </li>
+                    <li class="form-checkbox__item">
+                      <label for="form-checkbox__burn" aria-label="Обгорел на пляже">Обгорел на пляже</label>
+                      <input type="checkbox" name="burn" id="form-checkbox__burn" checked/>
+                    </li>
+                    <li class="form-checkbox__item">
+                      <label for="form-checkbox__chuck-norris" aria-label="Видел Чака Норриса">Видел Чака Норриса</label>
+                      <input type="checkbox" name="chuck-norris" id="form-checkbox__chuck-norris"/>
+                    </li>
+                    <li class="form-checkbox__item">
+                      <label for="form-checkbox__souvenirs" aria-label="Накупил сувениров">Накупил сувениров</label>
+                      <input type="checkbox" name="souvenirs" id="form-checkbox__souvenirs"/>
+                    </li>
+                    <li class="form-checkbox__item">
+                      <label for="form-checkbox__tower" aria-label="Удержал башню">Удержал башню</label>
+                      <input type="checkbox" name="tower" id="form-checkbox__tower" checked/>
+                    </li>
+                    <li class="form-checkbox__item">
+                      <label for="form-checkbox__hotel" aria-label="Разгромил отель">Разгромил отель</label>
+                      <input type="checkbox" name="hotel" id="form-checkbox__hotel"/>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="form-page__form-contacts">
+              <ul class="form-contacts__list">
+                <li class="form-contacts__item">
+                  <label for="form-contacts__tel" aria-label="Номер телефона">Номер телефона</label>
+                  <input type="tel" name="tel" id="form-contacts__tel" placeholder="Номер, пожалуйста"/>
+                </li>
+                <li class="form-contacts__item">
+                  <label for="form-contacts__email" aria-label="Адрес почты">Адрес почты</label>
+                  <input type="email" name="email" id="form-contacts__email" placeholder="Введите почту*"/>
+                </li>
+            </fieldset>
+
+            <fieldset class="form-page__form-radio">
+              <legend class="form-radio__title">С каким приложением путешествовали?</legend>
+              <ul class="form-radio__list">
+                <li class="form-radio__item">
+                  <label for="form-radio-ios" aria-label="Pink для ios">Pink для iOS</label>
+                  <input type="radio" name="pink-app" value="pink-for-ios" id="form-radio-ios" checked/>
+                </li>
+                <li class="form-radio__item">
+                  <label for="form-radio__android" aria-label="Pink на Android">Pink на Android</label>
+                  <input type="radio" name="pink-app" value="pink-for-android" id="form-radio__android"/>
+                </li>
+                <li class="form-radio__item">
+                  <label for="form-radio__windows" aria-label="Windows Phone">Windows Phone</label>
+                  <input type="radio" name="pink-app" value="pink-for-windows" id="form-radio__windows"/>
+                </li>
+            </fieldset>
+
+            <div class="form-page__form-review">
+              <ul class="form-review__list">
+                <li class="form-review__item">
+                  <label for="form-review__comment" aria-label="Опишите свои эмоции">Опишите свои эмоции</label>
+                  <input type="textarea" name="comment" id="form-review__comment" placeholder="Можно прям в красках, не стесняясь в выражениях"/>
+                </li>
+              </ul>
+            </div>
+
+            <button class="form-page__button" type="submit" value="Отправить форму">Отправить форму</button>
+            <span class="form-page__remark">Обязательные поля*</span>
+        </form>
+      </main>
+      <footer class="footer-form">
+          <div class="footer-form__wrapper">
+          <img src="#" width="147" height="40" alt="Логотип «Pink»"/>
+            <div class="footer-form__social">
+             <ul class="social__list">
+                <li class="social__item"><a href="#" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a></li>
+                <li class="social__item"><a href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+                <li class="social__item"><a href="#" aria-label="Ютуб"><span class="visually-hidden">Ютуб</span></a></li>
+             </ul>
+            </div>
+            <span class="footer-form__developer">Разработано</span>
+            <a class="footer-form__developer-logo">
+              <img src="#" width="27" height="34" alt="Логотип разработчика"/>
+            </a>
+          </div>
+      </footer>
+    </body>
+</html>
