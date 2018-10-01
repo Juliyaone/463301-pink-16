@@ -38,31 +38,33 @@
       <section class="download">
           <h2 class="visually-hidden">Скачать приложение «Pink»</h2>
           <a href="https://www.apple.com/ru/itunes/" class="download__button">Скачать приложение</a>
-        <ul class="download__icon">
-          <li class="download__icon--item">
-            <a href="https://www.apple.com/ru/itunes/">
-              <img src="#" width="47" height="56" alt="Иконка Apple">
-            </a>
-          </li>
-          <li class="download__icon--item">
-            <a href="https://play.google.com/store">
-              <img src="#" width="43" height="47" alt="Иконка Android">
-            </a>
-          </li>
-          <li class="download__icon--item">
-            <a href="https://www.microsoft.com/ru-ru/store/b/home">
-              <img src="#" width="44" height="41" alt="Иконка Windows">
-            </a>
-          </li>
-        </ul>
+          <div class="download__icon">
+            <ul class="download__icon-list">
+              <li class="download__icon-item">
+                <a href="https://www.apple.com/ru/itunes/">
+                  <img src="#" width="47" height="56" alt="Иконка Apple">
+                </a>
+              </li>
+              <li class="download__icon-item">
+                <a href="https://play.google.com/store">
+                  <img src="#" width="43" height="47" alt="Иконка Android">
+                </a>
+              </li>
+              <li class="download__icon-item">
+                <a href="https://www.microsoft.com/ru-ru/store/b/home">
+                  <img src="#" width="44" height="41" alt="Иконка Windows">
+                </a>
+              </li>
+            </ul>
+          </div>
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Наши приемущества</h2>
         <header class="advantages__header">
-          <p advantages__header--text>Устали от серости мегаполиса?</p>
-          <p advantages__header--text>Нам есть, что вам предложить!</p>
+          <p class="advantages__header-title">Устали от серости мегаполиса?</p>
+          <p class="advantages__header-title">Нам есть, что вам предложить!</p>
         </header>
         <ul class="advantages__list">
           <li class="advantages__list-item">
@@ -118,10 +120,12 @@
         <div class="rate__table-list slider__list">
 
           <table class="rate__table-item slider__item">
-            <th class="rate__table-header">
-              <p class="rate__table-header--title">Стандарт</p>
-              <span class="rate__table-header--priсe">3,99 usd</span>
-            </th>
+            <tr class="rate__row">
+              <th colspan ="2" class="rate__table-header">
+                <p class="rate__table-header--title">Стандарт</p>
+                <span class="rate__table-header--priсe">3,99 usd</span>
+              </th>
+            </tr>
             <tr class="rate__row">
               <td class="rate__row--date">Розовый фильтр</td>
               <td class="rate__row--date"><img src="#" width="27" height="26" alt="Галочка"></td>
@@ -137,10 +141,12 @@
           </table>
 
           <table class="rate__table-item slider__item">
-            <th class="rate__table-header">
+            <tr class="rate__row">
+            <th colspan="2" class="rate__table-header">
               <p class="rate__table-header--title">Стандарт</p>
               <span class="rate__header--priсe">3,99 usd</span>
             </th>
+            </tr>
             <tr class="rate__row">
               <td class="rate__row--date">Розовый фильтр</td>
               <td class="rate__row--date"><img src="#" width="27" height="26" alt="Галочка"></td>
@@ -156,10 +162,12 @@
           </table>
 
           <table class="rate__table-item slider__item">
-            <th class="rate__table-header">
+            <tr class="rate__row">
+            <th colspan="2" class="rate__table-header">
               <p class="rate__table-header--title">Стандарт</p>
               <span class="rate__table-header--priсe">3,99 usd</span>
             </th>
+            </tr>
             <tr class="rate__row">
               <td class="rate__row--date">Розовый фильтр</td>
               <td class="rate__row--date"><img src="#" width="27" height="26" alt="Галочка"></td>
@@ -191,7 +199,7 @@
           <p class="contacts__title">Свяжитесь с нами!</p>
 
           <span class="contacts_text">Звоните:</span>
-          <a class="contacts_tel" href="tel:+78122757575" class="">
+          <a class="contacts_tel" href="tel:+78122757575">
             <span class="contacts__tel-mobile">тел. +7 (812) 555-66-66</span>
           </a>
 
