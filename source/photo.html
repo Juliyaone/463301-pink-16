@@ -3,34 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение «Pink»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-      <body>
-        <header class="page-header">
-
-          <div class="page-header__wrapper">
-            <a class="page-header__logo">
-              <img class="page-header__logo-image" src="#" width="77" height="23" alt="Логотип приложения «Pink»"/>
-            </a>
-                <nav class="page-header__main-nav main-nav">
-                <button class="main-nav__toggle main-nav__toggle--no-js" type="button">Открыть меню</button>
-                    <ul class="main-nav__list site-list">
-                      <li class="site-list__item">
-                        <a>Главная</a>
-                      </li>
-                      <li class="site-list__item site-list__item--active">
-                        <a href="photo.html">Фотографии</a>
-                      </li>
-                      <li class="site-list__item">
-                        <a href="form.html">Конкурс</a>
-                      </li>
-                      <li class="site-list__item">
-                        <a href="https://htmlacademy.ru/">Html academy</a>
-                      </li>
-                    </ul>
-                </nav>
-            <h1 class="page-header__title-photo">Фотографии пользователей</h1>
-          </div>
-        </header>
+  <body>
+    <header class="page-header page-header--photo">
+      <div class="page-header__wrapper">
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <a class="page-header__logo">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения «Pink»"/>
+              </a>
+              <button class="main-nav__toggle" tabindex="0">
+                <img src="img/icon-menu-burger.svg" width="50" height="24" alt="Иконка раскрывающего меню"/>
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/">Html academy</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="page-header__title">Фотографии пользователей</h1>
+      </div>
+    </header>
         <main>
           <section class="photo-reviews">
             <h2 class="visually-hidden">Отзывы о приложении «Pink»</h2>
@@ -42,113 +47,141 @@
                 <ul class="photo-reviews__list">
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote">
                         <a class="photo-reviews__photo">
-                          <img src="#" width="320" height="137" alt="Фото Анны">
+                          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны">
                         </a>
                         <cite class="photo-reviews__user">Анна</cite>
                         <span class="photo-reviews__times">(5 минут назад)</span>
                         <p class="photo-reviews__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                        <span class="photo-reviews__like">Нравится: 215</span>
+                      </a>
                       </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 356</span>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote">
                         <a class="photo-reviews__photo">
-                          <img src="#" width="280" height="180" alt="Фото Левона">
+                          <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона">
                         </a>
                         <cite class="photo-reviews__user">Левон</cite>
                         <span class="photo-reviews__times">(5 часов назад)</span>
                         <p class="photo-reviews__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                        <span class="photo-reviews__like">Нравится: 356</span>
+                      </a>
                       </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 356</span>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote">
                         <a class="photo-reviews__photo">
-                          <img src="#" width="280" height="180" alt="Фото Антона">
+                          <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
                         </a>
                         <cite class="photo-reviews__user">Антон</cite>
                         <span class="photo-reviews__times">(12 часов назад)</span>
                         <p class="photo-reviews__comment">Соседи будут рады!</p>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg">
+                        <span class="photo-reviews__like">Нравится: 666</span>
+                      </a>
                       </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 666</span>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote">
                         <a class="photo-reviews__photo">
-                          <img src="#" width="280" height="180" alt="Фото Бориса">
+                          <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса">
                         </a>
                         <cite class="photo-reviews__user">Борис</cite>
                         <span class="photo-reviews__times">(20 часов назад)</span>
                         <p class="photo-reviews__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                        <span class="photo-reviews__like">Нравится: 215</span>
+                      </a>
                       </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 215</span>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote"c>
                         <a class="photo-reviews__photo">
-                          <img src="#" width="280" height="180" alt="Фото Сергея">
+                          <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея">
                         </a>
                         <cite class="photo-reviews__user">Сергей</cite>
                         <span class="photo-reviews__times">(25 часов назад)</span>
                         <p class="photo-reviews__comment">Самая кубанская в мире!</p>
-                      </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 4</span>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                        <span class="photo-reviews__like">Нравится: 4</span>
+                      </a>
+                    </blockquote>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote">
                         <a class="photo-reviews__photo">
-                          <img src="#" width="280" height="180" alt="Фото Максима">
+                          <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
                         </a>
                         <cite class="photo-reviews__user">Максим</cite>
                         <span class="photo-reviews__times">(40 часов назад)</span>
                         <p class="photo-reviews__comment">Где снег-то?</p>
-                      </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 150</span>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                        <span class="photo-reviews__like">Нравится: 150</span>
+                      </a>
+                    </blockquote>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__wrapper">
+                      <blockquote class="photo-reviews__blockquote">
                         <a class="photo-reviews__photo">
-                          <img src="#" width="280" height="180" alt="Фото Надежды">
+                          <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды">
                         </a>
                         <cite class="photo-reviews__user">Надежда</cite>
                         <span class="photo-reviews__times">(45 часов назад)</span>
                         <p class="photo-reviews__comment">Всем GM и взаимные лайки!</p>
-                      </blockquote>
-                      <span class="photo-reviews__like photo-reviews__like--heart"></span>
-                      <span class="photo-reviews__like">Нравится: 2560</span>
+                      <a class="photo-reviews__link" href="#">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                        <span class="photo-reviews__like">Нравится: 2560</span>
+                      </a>
+                    </blockquote>
                     </li>
                 </ul>
             </div>
           </section>
 
-            <p class="">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-
           <section class="photo-editor">
             <h3 class="visually-hidden">Редактор для фото</h3>
 
+              <p class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
               <div class="photo-editor__wrapper">
                 <form class="photo-editor__form" method="get" action="https://echo.htmlacademy.ru">
-                  <img src="#" width="280" height="374" alt="Образец фото"/>
+                  <img class="photo-editor__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Образец фото"/>
+                  <div class="photo-editor__box-wrapper">
                     <ul class="photo-editor__list">
-                      <li class="photo-editor__item"><a href="#" aria-label="Обрезать фото"><span class="visually-hidden">Обрезать фото</span></a></li>
-                      <li class="photo-editor__item"><a href="#" aria-label="Яркость фото"><span class="visually-hidden">Яркость фото</span></a></li>
-                      <li class="photo-editor__item"><a href="#" aria-label="Контрастность фото"><span class="visually-hidden">Контрастность фото</span></a></li>
+                      <li class="photo-editor__item">
+                        <a href="#" aria-label="Обрезать фото">
+                          <img src="img/icon-editor-crop.svg" width="" height="" alt="Обрезать фото"/>
+                        </a>
+                      </li>
+                      <li class="photo-editor__item">
+                        <a href="#" aria-label="Яркость фото">
+                          <img src="img/icon-editor-fill.svg" width="" height="" alt="Яркость фото"/>
+                        </a>
+                      </li>
+                      <li class="photo-editor__item">
+                        <a href="#" aria-label="Контрастность фото">
+                          <img src="img/icon-editor-contrast.svg" width="" height="" alt="Контрастность фото"/>
+                        </a>
+                      </li>
                     </ul>
-                    <span class="photo-editor__range-controls"></span>
+                    <div class="photo-editor__range-controls"></div>
+                  </div>
                       <button class="photo-editor__button-upload" value="Запостить">Запостить</button>
                       <button class="photo-editor__button-cansel" value="Отмена">Отмена</button>
                 </form>
@@ -156,28 +189,29 @@
           </section>
         </main>
 
-        <footer class="footer-form">
-
+      <footer class="footer-form">
           <div class="footer-form__wrapper">
-            <img src="#" width="147" height="40" alt="Логотип «Pink»"/>
-              <div class="footer-form__social">
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a href="#" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#" aria-label="Ютуб"><span class="visually-hidden">Ютуб</span></a>
-                  </li>
-                </ul>
-              </div>
-              <span class="footer-form__developer">Разработано</span>
-              <a class="footer-form__developer-logo">
-                <img src="#" width="27" height="34" alt="Логотип разработчика"/>
-              </a>
+          <img class="footer-form__img-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип «Pink»"/>
+            <div class="footer-form__social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__item-twitter" href="https://twitter.com/" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item-facebook" href="https://www.facebook.com/" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__item-youtube" href="https://www.youtube.com/" aria-label="Ютуб"><span class="visually-hidden">Ютуб</span></a>
+                </li>
+              </ul>
+            </div>
+          <div class="footer-form__developer-box">
+            <span class="footer-form__developer">Разработано</span>
+            <a class="footer-form__developer-logo">
+              <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип разработчика"/>
+            </a>
           </div>
-        </footer>
-      </body>
+          </div>
+      </footer>
+    </body>
 </html>
