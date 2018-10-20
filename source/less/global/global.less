@@ -9,7 +9,7 @@ body {
   list-style-type: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -20,4 +20,9 @@ body {
   border: 0;
   clip-patch: inset(100%);
   clip: rect(0 0 0 0);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial=scale=1">
     <title>Приложение «Pink»</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,7 +11,7 @@
       <div class="page-header__wrapper">
           <nav class="main-nav">
             <div class="main-nav__wrapper">
-              <a class="page-header__logo">
+              <a class="page-header__logo" href="index.html">
                 <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения «Pink»"/>
               </a>
               <button class="main-nav__toggle" tabindex="0">
@@ -19,6 +20,14 @@
               </button>
             </div>
             <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="page-header__logo">
+                  <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения «Pink»"/>
+                </a>
+                <a class="page-header__cross">
+                  <img class="page-header__cross-image" src="img/icon-menu-cross.svg" width="24" height="23" alt="Кнопка крестик"/>
+                </a>
+              </li>
               <li class="site-list__item">
                 <a>Главная</a>
               </li>
@@ -39,18 +48,20 @@
         <main>
           <section class="photo-reviews">
             <h2 class="visually-hidden">Отзывы о приложении «Pink»</h2>
-
             <div class="photo-reviews__wrapper">
-
               <p class="photo-reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+            </div>
 
-                <ul class="photo-reviews__list">
+                  <div class="photo-reviews__panorama-wrapper">
+                    <a class="photo-reviews__photo-panorama">
+                      <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны">
+                    </a>
+                  </div>
 
+                  <ul class="photo-reviews__list">
                     <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
                       <blockquote class="photo-reviews__blockquote">
-                        <a class="photo-reviews__photo">
-                          <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны">
-                        </a>
                         <cite class="photo-reviews__user">Анна</cite>
                         <span class="photo-reviews__times">(5 минут назад)</span>
                         <p class="photo-reviews__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -59,28 +70,32 @@
                         <span class="photo-reviews__like">Нравится: 215</span>
                       </a>
                       </blockquote>
+                    </div>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__blockquote">
+                      <div class="photo-reviews__wrapper">
                         <a class="photo-reviews__photo">
                           <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото Левона">
                         </a>
-                        <cite class="photo-reviews__user">Левон</cite>
-                        <span class="photo-reviews__times">(5 часов назад)</span>
-                        <p class="photo-reviews__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                      <a class="photo-reviews__link" href="#">
-                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
-                        <span class="photo-reviews__like">Нравится: 356</span>
-                      </a>
-                      </blockquote>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Левон</cite>
+                          <span class="photo-reviews__times">(5 часов назад)</span>
+                          <p class="photo-reviews__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <a class="photo-reviews__link" href="#">
+                          <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                          <span class="photo-reviews__like">Нравится: 356</span>
+                        </a>
+                        </blockquote>
+                      </div>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__blockquote">
+                      <div class="photo-reviews__wrapper">
                         <a class="photo-reviews__photo">
                           <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото Антона">
                         </a>
+                      <blockquote class="photo-reviews__blockquote">
                         <cite class="photo-reviews__user">Антон</cite>
                         <span class="photo-reviews__times">(12 часов назад)</span>
                         <p class="photo-reviews__comment">Соседи будут рады!</p>
@@ -89,13 +104,15 @@
                         <span class="photo-reviews__like">Нравится: 666</span>
                       </a>
                       </blockquote>
+                    </div>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__blockquote">
+                      <div class="photo-reviews__wrapper">
                         <a class="photo-reviews__photo">
                           <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото Бориса">
                         </a>
+                      <blockquote class="photo-reviews__blockquote">
                         <cite class="photo-reviews__user">Борис</cite>
                         <span class="photo-reviews__times">(20 часов назад)</span>
                         <p class="photo-reviews__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -104,54 +121,60 @@
                         <span class="photo-reviews__like">Нравится: 215</span>
                       </a>
                       </blockquote>
+                    </div>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__blockquote"c>
+                      <div class="photo-reviews__wrapper">
                         <a class="photo-reviews__photo">
                           <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото Сергея">
                         </a>
-                        <cite class="photo-reviews__user">Сергей</cite>
-                        <span class="photo-reviews__times">(25 часов назад)</span>
-                        <p class="photo-reviews__comment">Самая кубанская в мире!</p>
-                      <a class="photo-reviews__link" href="#">
-                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
-                        <span class="photo-reviews__like">Нравится: 4</span>
-                      </a>
-                    </blockquote>
-                    </li>
-
-                    <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__blockquote">
-                        <a class="photo-reviews__photo">
-                          <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
+                        <blockquote class="photo-reviews__blockquote"c>
+                          <cite class="photo-reviews__user">Сергей</cite>
+                          <span class="photo-reviews__times">(25 часов назад)</span>
+                          <p class="photo-reviews__comment">Самая кубанская в мире!</p>
+                        <a class="photo-reviews__link" href="#">
+                          <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                          <span class="photo-reviews__like">Нравится: 4</span>
                         </a>
-                        <cite class="photo-reviews__user">Максим</cite>
-                        <span class="photo-reviews__times">(40 часов назад)</span>
-                        <p class="photo-reviews__comment">Где снег-то?</p>
-                      <a class="photo-reviews__link" href="#">
-                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
-                        <span class="photo-reviews__like">Нравится: 150</span>
-                      </a>
-                    </blockquote>
+                      </blockquote>
+                      </div>
                     </li>
 
                     <li class="photo-reviews__item">
-                      <blockquote class="photo-reviews__blockquote">
+                      <div class="photo-reviews__wrapper">
+                        <a class="photo-reviews__photo">
+                            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото Максима">
+                        </a>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Максим</cite>
+                          <span class="photo-reviews__times">(40 часов назад)</span>
+                          <p class="photo-reviews__comment">Где снег-то?</p>
+                        <a class="photo-reviews__link" href="#">
+                          <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                          <span class="photo-reviews__like">Нравится: 150</span>
+                        </a>
+                      </blockquote>
+                      </div>
+                    </li>
+
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
                         <a class="photo-reviews__photo">
                           <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото Надежды">
                         </a>
-                        <cite class="photo-reviews__user">Надежда</cite>
-                        <span class="photo-reviews__times">(45 часов назад)</span>
-                        <p class="photo-reviews__comment">Всем GM и взаимные лайки!</p>
-                      <a class="photo-reviews__link" href="#">
-                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
-                        <span class="photo-reviews__like">Нравится: 2560</span>
-                      </a>
-                    </blockquote>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Надежда</cite>
+                          <span class="photo-reviews__times">(45 часов назад)</span>
+                          <p class="photo-reviews__comment">Всем GM и взаимные лайки!</p>
+                        <a class="photo-reviews__link" href="#">
+                          <img class="photo-reviews__like-heart" src="img/icon-heart.svg"/>
+                          <span class="photo-reviews__like">Нравится: 2560</span>
+                        </a>
+                      </blockquote>
+                    </div>
                     </li>
                 </ul>
-            </div>
           </section>
 
           <section class="photo-editor">
