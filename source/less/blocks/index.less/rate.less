@@ -1,0 +1,252 @@
+.rate__wrapper {
+  position: relative;
+  width: 320px;
+  height: 379px;
+  background-color: #f2f2f2;
+  margin: auto;
+  padding-top: 65px;
+  overflow: hidden;
+}
+
+.rate__table {
+  position: absolute;
+  left: -255px;
+  width: 836px;
+  height: 280px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+}
+
+.rate__table-header {
+  width: 276px;
+  height: 98px;
+  background-color: #283645;
+  margin: auto;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #283645;
+  padding: 0;
+}
+
+.rate__table-header--title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.rate__table-header--priсe {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+
+.rate__row {
+  width: 836px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+}
+
+.rate__row--header {
+  width: 836px;
+  height: 98px;
+  padding: 0;
+  margin: 0;
+}
+
+.rate__row--date {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+}
+
+.rate__row-date-text {
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.rate__row--date-icon {
+  padding-right: 15px;
+}
+
+.rate__row-date-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__toggles--table {
+  position: absolute;
+  top: 320px;
+  margin: 0;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 0;
+}
+
+.rate__row--date-table-descktop {
+  display: none;
+}
+
+.rate__table-header-table-descktop {
+  display: none;
+}
+
+@media(min-width: 660px) {
+  .rate__wrapper {
+    position: relative;
+    width: 660px;
+    height: 325px;
+  }
+
+  .rate__table {
+    position: absolute;
+    left: 20px;
+    width: 620px;
+    height: 220px;
+  }
+
+  .rate__row--header {
+    width: 620px;
+    height: 77px;
+    padding: 0;
+    margin: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .rate__table-header {
+    width: 152px;
+    height: 79px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .rate__table-header--title {
+    font-size: 16px;
+  }
+
+  .rate__table-header--priсe {
+    font-size: 18px;
+  }
+
+  .rate__row {
+    width: 620px;
+    height: 45px;
+  }
+
+  .rate__row--date {
+    width: 152px;
+    height: 45px;
+  }
+
+  .rate__row-date-flex {
+    display: inline-block;
+  }
+
+  .rate__row-date-text {
+    display: none;
+  }
+
+  .rate__row--date-icon {
+    margin: auto;
+    padding-right: 61px;
+    padding-left: 61px;
+  }
+
+  .rate__row--date-table-descktop {
+    display: table-cell;
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .rate__table-header-table-descktop {
+    display: block;
+    width: 152px;
+    height: 79px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media(min-width: 1200px) {
+  .rate__wrapper {
+    position: relative;
+    width: 1200px;
+    height:379px;
+  }
+
+  .rate__table {
+    position: absolute;
+    left: 129px;
+    width: 942px;
+    height: 280px;
+  }
+
+  .rate__row--header {
+    width: 942px;
+    height: 98px;
+  }
+
+  .rate__table-header {
+    width: 232px;
+    height: 98px;
+  }
+
+  .rate__table-header--title {
+    font-size: 18px;
+  }
+
+  .rate__table-header--priсe {
+    font-size: 24px;
+  }
+
+  .rate__row {
+    width: 942px;
+    height: 60px;
+  }
+
+  .rate__row--date {
+    width: 232px;
+    height: 60px;
+  }
+
+  .rate__row--date-icon {
+    margin: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .rate__row--date-table-descktop {
+    font-size: 18px;
+    padding-left: 24px;
+  }
+
+  .rate__table-header-table-descktop {
+    display: block;
+    width: 232px;
+    height: 98px;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 0;
+  }
+}

@@ -66,15 +66,14 @@
 .site-list__small {
   position: absolute;
   background-color: rgba(29, 38, 50, 0.7);
-  border-bottom: none;
-  border-top: 1px solid #485461;
-  padding-top: 16px;
-  padding-bottom: 15px;
+  min-height: 66px;
+  border: none;
   z-index: 3;
 }
 
 .site-list__item-logo-image {
   margin-left: 20px;
+  padding-top: 20px;
 }
 
 .site-list__item-toggle {
@@ -85,6 +84,7 @@
   cursor: pointer;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
   background-color: transparent;
   margin-right: 20px;
 
@@ -123,11 +123,14 @@
 @media (min-width: 660px) {
   .site-list__small {
     width: 660px;
-    background-size: cover;
+    min-height: 110px;
+    padding: 0;
+    border-top: none;
   }
 
   .site-list__small-box {
     width: 660px;
+    padding-top: 30px;
   }
 }
 
