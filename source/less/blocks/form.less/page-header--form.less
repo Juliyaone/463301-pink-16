@@ -1,5 +1,4 @@
 .page-header--form {
-  position: relative;
   width: 320px;
   height: 237px;
   background-color: #1d2631;
@@ -17,7 +16,40 @@
   line-height: 28px;
   color: #ffffff;
   text-align: center;
-  margin-left: 45px;
-  margin-right: 45px;
-  margin-top: 30px;
+  margin: 0;
+  padding: 0;
+  padding-top: 93px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media(min-width:660px) {
+  .page-header--form {
+    width: 660px;
+    height: 440px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+.page-header__title {
+    font-size: 50px;
+    line-height: 58px;
+    padding-top: 190px;
+    padding-bottom: 76px;
+  }
+}
+
+@media(min-width:1200px) {
+  .page-header--form {
+    width: 1200px;
+    height: 395px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+.page-header__title {
+    padding-top: 184px;
+    padding-bottom: 95px;
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }

@@ -3,14 +3,17 @@
 }
 
 .photo-reviews__title {
+  width: 243px;
   font-size: 14px;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
   color: #283645;
   padding: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 43px;
+  padding-bottom: 51px;
+  padding-left: 19px;
+  padding-right: 18px;
   margin: 0;
 }
 
@@ -26,8 +29,15 @@
 
 .photo-reviews__panorama-wrapper {
   width: 320px;
+  height: 137px;
+  background-color: #f2f2f2;
   margin: auto;
   padding: 0;
+}
+
+.photo-reviews__img {
+  width: 280px;
+  height: 180px;
 }
 
 .photo-reviews__photo-panorama {
@@ -42,6 +52,25 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.photo-reviews__panorama-blockquote {
+  width: 240px;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.photo-reviews__blockquote-wrapper {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
 }
 
 .photo-reviews__user {
@@ -88,11 +117,111 @@
   line-height: 24px;
   text-align: left;
   text-transform: uppercase;
+  text-decoration: none;
   color: #d22856;
   padding: 0;
   margin: 0;
 }
 
+.photo-reviews__link {
+  text-decoration: none;
+}
+
 .photo-reviews__blockquote a {
   text-decoration: none;
 }
+
+@media(min-width:660px) {
+  .photo-reviews__wrapper {
+    width: 620px;
+  }
+
+  .photo-reviews__title {
+    width: 440px;
+    font-size: 18px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .photo-reviews__panorama-wrapper {
+    width: 660px;
+    height: 509px;
+  }
+
+  .photo-reviews__blockquote-wrapper {
+    width: 620px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .photo-reviews__panorama-blockquote {
+    width: 575px;
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+
+  .photo-reviews__blockquote {
+    width: 300px;
+  }
+
+  .photo-reviews__img {
+    width: 300px;
+    height: 300px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-reviews__panorama-like {
+    width: 130px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #d22856;
+    margin: 0;
+  }
+
+  .photo-reviews__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-reviews__item {
+    width: 330px;
+  }
+}
+
+@media(min-width:1200px) {
+  .photo-reviews__wrapper {
+    width: 1160px;
+    height: 240px;
+  }
+
+  .photo-reviews__title {
+    width: 575px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 293px;
+    padding-right: 292px;
+  }
+
+  .photo-reviews__panorama-wrapper {
+    width: 1200px;
+    height: 506px;
+  }
+}
+

@@ -1,7 +1,8 @@
 .footer-form__wrapper {
-  width: 320px;
+  width: 280px;
   padding-right: 20px;
   padding-left: 20px;
+  margin: auto;
 }
 
 .social__list {
@@ -44,8 +45,8 @@
 .social__item-facebook::before {
   content: "";
   position: absolute;
-  left: 15px;
-  top: 15px;
+  left: 17px;
+  top: 12px;
   display: block;
   width: 11px;
   height: 18px;
@@ -58,7 +59,7 @@
 .social__item-youtube::before {
   content: "";
   position: absolute;
-  left: 15px;
+  left: 17px;
   top: 15px;
   display: block;
   width: 15px;
@@ -72,26 +73,100 @@
 .footer-form__developer {
   font-size: 14px;
   font-weight: normal;
-  line-height: 18px;
-  text-align: center;
+  line-height: 35px;
   vertical-align: middle;
   color: #283645;
   padding: 0;
   margin: 0;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .footer-form__img-logo {
   padding-top: 60px;
   padding-left: 66px;
   padding-right: 66px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 .footer-form__developer-box {
+  display: flex;
   width: 130px;
   height: 35px;
-  padding-left: 68px;
-  padding-right: 67px;
+  padding-left: 75px;
+  padding-right: 75px;
   padding-bottom: 40px;
+}
+
+@media(min-width:660px) {
+  .footer-form__wrapper {
+    display: flex;
+    width: 620px;
+    height: 177px;
+  }
+
+  .footer-form__logo-wrapper {
+    width: 147px;
+    height: 177px;
+    padding: 0;
+  }
+
+  .footer-form__img-logo {
+    width: 147px;
+    height: 40px;
+    padding: 0;
+    padding-top: 86px;
+  }
+
+  .social__list {
+    width: 178px;
+    height: 177px;
+    margin: 0;
+    padding-top: 90px;
+    margin-right: 94px;
+    margin-left: 74px;
+  }
+
+  .footer-form__developer-box {
+    width: 130px;
+    height: 177px;
+    padding: 0;
+    padding-top: 103px;
+  }
+
+  .footer-form__developer-logo {
+    width: 27px;
+    height: 34px;
+  }
+}
+
+@media(min-width:1200px) {
+  .footer-form__wrapper {
+    justify-content: space-between;
+    width: 940px;
+    height: 197px;
+  }
+
+  .footer-form__img-logo {
+    padding-top: 70px;
+  }
+
+  .social__list {
+    padding-top: 74px;
+    margin-left: 70px;
+    margin-right: 54px;
+  }
+
+  .footer-form__developer-box {
+    width: 151px;
+    height: 197px;
+    padding-top: 85px;
+  }
+
+  .footer-form__developer {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
 }
