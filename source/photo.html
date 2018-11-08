@@ -69,34 +69,33 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <h1 class="page-header-photo__title">Фотографии пользователей</h1>
     </header>
         <main>
           <section class="photo-reviews">
             <h2 class="visually-hidden">Отзывы о приложении «Pink»</h2>
-            <div class="photo-reviews__wrapper">
+            <div class="photo-reviews__title-wrapper">
               <p class="photo-reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
             </div>
 
                   <div class="photo-reviews__panorama-wrapper">
-                    <a class="photo-reviews__photo-panorama">
+                    <a class="photo-reviews__panorama-photo">
                       <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото Анны">
                     </a>
                   </div>
-                    <div class="photo-reviews__blockquote-wrapper">
+                    <div class="photo-reviews__panorama-blockquote-wrapper">
                       <blockquote class="photo-reviews__panorama-blockquote">
-                        <cite class="photo-reviews__user">Анна</cite>
-                        <span class="photo-reviews__times">(5 минут назад)</span>
-                        <p class="photo-reviews__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                        <cite class="photo-reviews__panorama-user">Анна</cite>
+                        <span class="photo-reviews__panorama-times">(5 минут назад)</span>
+                        <p class="photo-reviews__panorama-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                         <div class="photo-reviews__panorama-like">
-                          <a class="photo-reviews__link" href="#">
-                            <img class="photo-reviews__panorama-like-heart" src="img/icon-heart.svg"/>
-                            <span class="photo-reviews__panorama-like">Нравится: 215</span>
+                          <a class="photo-reviews__panorama-link" href="#">
+                            <img class="photo-reviews__panorama-icon" src="img/icon-heart.svg"/>
+                            <span class="photo-reviews__panorama-like-text">Нравится: 215</span>
                           </a>
                         </div>
                       </blockquote>
                     </div>
-
                   <ul class="photo-reviews__list">
                     <li class="photo-reviews__item">
                       <div class="photo-reviews__wrapper">
@@ -129,7 +128,7 @@
                         <span class="photo-reviews__times">(12 часов назад)</span>
                         <p class="photo-reviews__comment">Соседи будут рады!</p>
                       <a class="photo-reviews__link" href="#">
-                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg">
+                        <img class="photo-reviews__like-heart" src="img/icon-heart.svg" width="13" height="12">
                         <span class="photo-reviews__like">Нравится: 666</span>
                       </a>
                       </blockquote>
@@ -216,43 +215,54 @@
 
           <section class="photo-editor">
             <h3 class="visually-hidden">Редактор для фото</h3>
-
-              <p class="photo-editor__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+              <div class="photo-editor__title-wrapper">
+                <p class="photo-editor__title">Затмите их всех!</p>
+                <p class="photo-editor__title">Выкладывайте все, что накопилось в телефоне!</p>
+              </div>
 
               <div class="photo-editor__wrapper">
                 <form class="photo-editor__form" method="get" action="https://echo.htmlacademy.ru">
-                  <img class="photo-editor__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Образец фото"/>
+                  <div class="photo-editor__img-wrapper">
+                    <img class="photo-editor__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Образец фото"/>
+                  </div>
+                  <div class="photo-editor__form-flex">
                   <div class="photo-editor__box-wrapper">
                     <ul class="photo-editor__list">
                       <li class="photo-editor__item">
-                        <a href="#" aria-label="Обрезать фото">
-                          <img src="img/icon-editor-crop.svg" width="" height="" alt="Обрезать фото"/>
+                        <a class="photo-editor__item-link" href="#" aria-label="Обрезать фото">
+                          <img class="photo-editor__item-img" src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезать фото"/>
+                          <div class="photo-editor__line-one"></div>
                         </a>
                       </li>
                       <li class="photo-editor__item">
-                        <a href="#" aria-label="Яркость фото">
-                          <img src="img/icon-editor-fill.svg" width="" height="" alt="Яркость фото"/>
+                        <a class="photo-editor__item-link" href="#" aria-label="Яркость фото">
+                          <img class="photo-editor__item-img" src="img/icon-editor-fill.svg" width="48" height="48" alt="Яркость фото"/>
+                          <div class="photo-editor__line-two"></div>
                         </a>
                       </li>
                       <li class="photo-editor__item">
-                        <a href="#" aria-label="Контрастность фото">
-                          <img src="img/icon-editor-contrast.svg" width="" height="" alt="Контрастность фото"/>
+                        <a class="photo-editor__item-link" href="#" aria-label="Контрастность фото">
+                          <img class="photo-editor__item-img" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контрастность фото"/>
+                          <div class="photo-editor__line-three"></div>
                         </a>
                       </li>
                     </ul>
-                    <div class="photo-editor__range-controls"></div>
+                    <div class="photo-editor__range-controls-ring"></div>
                   </div>
+                    <div class="photo-editor__button">
                       <button class="photo-editor__button-upload" value="Запостить">Запостить</button>
                       <button class="photo-editor__button-cansel" value="Отмена">Отмена</button>
+                    </div>
+                  </div>
                 </form>
               </div>
           </section>
         </main>
 
-      <footer class="footer-form">
-          <div class="footer-form__wrapper">
-          <img class="footer-form__img-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип «Pink»"/>
-            <div class="footer-form__social">
+      <footer class="footer-photo">
+          <div class="footer-photo__wrapper">
+          <img class="footer-photo__img-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип «Pink»"/>
+            <div class="footer-photo__social">
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__item-twitter" href="https://twitter.com/" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a>
@@ -265,9 +275,9 @@
                 </li>
               </ul>
             </div>
-          <div class="footer-form__developer-box">
-            <span class="footer-form__developer">Разработано</span>
-            <a class="footer-form__developer-logo">
+          <div class="footer-photo__developer-box">
+            <span class="footer-photo__developer">Разработано</span>
+            <a class="footer-photo__developer-logo">
               <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип разработчика"/>
             </a>
           </div>
