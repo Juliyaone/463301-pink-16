@@ -8,18 +8,12 @@
   </head>
   <body>
     <header class="page-header">
-    <div class="page-header__background-image">
       <nav class="main-nav main-nav--opened main-nav--nojs">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+        <ul class="main-nav__small-list">
           <li class="site-list__small">
             <div class="site-list__small-box">
             <a class="site-list__item-logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desctop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
                 <img class="site-list__item-logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения «Pink»"/>
-              </picture>
             </a>
             <button class="site-list__item-toggle" type="button"><span class="visually-hidden">Открыть меню</span>
                   <svg class="site-list__item-toggle-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="24px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
@@ -42,11 +36,7 @@
               <li class="site-list__item">
                 <div class="site-list__item-box">
                   <a class="site-list__item-logo">
-                    <picture>
-                      <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desctop.svg">
-                      <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                      <img class="site-list__item-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения «Pink»"/>
-                    </picture>
+                      <img class="site-list__item-logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения «Pink»"/>
                   </a>
                   <button class="site-list__item-cross">
                     <svg class="site-list__item-cross-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="23px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
@@ -68,17 +58,19 @@
                 <a href="https://htmlacademy.ru/">Html academy</a>
               </li>
           </ul>
-        </div>
+          <div class="page-header__background-image"></div>
       </nav>
-      <div class="page-header__background-image-downloads">
-        <div class="page-header__background-image-hand-box">
-          <img class="page-header__background-image-hand" src="img/iphone-hand-mobile@1x.png" alt="Фото приложения «Pink» рука держит телефон"/>
-        </div>
         <section class="download">
           <h2 class="visually-hidden">Скачать приложение «Pink»</h2>
           <div class="download__wrapper">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x" alt="Фото приложения «Pink»">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x" alt="Фото приложения «Pink»">
+                <img class="page-header__background-image-hand"
+                src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Фото приложения «Pink»"/>
+              </picture>
             <p class="download__tablet-descktop-title">Взгляните на жизнь иначе!</p>
-              <a class="download__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+              <a class="download__button" href="https://www.apple.com/ru/itunes/"><span class="download__button-text">Скачать приложение</span></a>
                 <ul class="download__icon-list">
                   <li class="download__icon-item">
                     <a href="https://www.apple.com/ru/itunes/">
@@ -98,9 +90,7 @@
                 </ul>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-          </div>
         </section>
-      </div>
     </header>
 
     <main class="page-main">
@@ -165,18 +155,29 @@
 
           <div class="reviews__wrapper slider">
             <div class="reviews__list slider__list">
-            <a class="reviews__write visually-hidden" href="#">Оставить отзыв</a>
               <blockquote class="reviews__item slider__item">
+                <div class="reviews__display-flex-row">
+                  <a><img class="reviews__before" src="img/icon-review-arrow-left.svg" width="22" height="41" alt="Иконка предыдущий отзыв"></a>
+                <div class="reviews__display-flex-column">
                 <img class="reviews__img-quotes" src="img/icon-quotes.svg" width="79" height="63" alt="Иконка кавычки">
                 <span class="reviews__title">Николай Петров</span>
                 <span class="reviews__age-job">25 лет, водитель трамвая</span>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+              <a><img class="reviews__after" src="img/icon-review-arrow-right.svg" width="22" height="41" alt="Иконка cледующий отзыв"></a>
+            </div>
               </blockquote>
               <blockquote class="reviews__item slider__item">
+                <div class="reviews__display-flex-row">
+                  <a><img class="reviews__before" src="img/icon-review-arrow-left.svg" width="22" height="41" alt="Иконка предыдущий отзыв"></a>
+                <div class="reviews__display-flex-column">
                 <img class="reviews__img-quotes" src="img/icon-quotes.svg" width="79" height="63" alt="Иконка кавычки">
                 <span class="reviews__title">Николай Петров</span>
                 <span class="reviews__age-job">25 лет, водитель трамвая</span>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+              <a><img class="reviews__after" src="img/icon-review-arrow-right.svg" width="22" height="41" alt="Иконка cледующий отзыв"></a>
+            </div>
               </blockquote>
               <blockquote class="reviews__item slider__item">
                 <div class="reviews__display-flex-row">

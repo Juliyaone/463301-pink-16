@@ -80,6 +80,16 @@
   vertical-align: middle;
 }
 
+.slider__toggle:hover::before,
+.slider__toggle:focus::before {
+  border-color: #7e868f;
+}
+
+.slider__toggle:active::before {
+  border-color: #e9ebec;
+  outline-offset: 5px;
+}
+
 @media (min-width: 660px) {
   .slider__toggles {
     position: absolute;
