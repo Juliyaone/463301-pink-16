@@ -1,6 +1,4 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   width: 320px;
   height: auto;
   background-color: #1d2631;
@@ -30,16 +28,15 @@
 
 .page-header__background-image-hand {
   position: relative;
-  bottom: 285px;
   z-index: 3;
+  top: 175px;
 }
 
 
 @media (min-width: 660px) {
   .page-header {
-    flex-direction: row;
     width: 660px;
-    height: auto;
+    height: 729px;
   }
 
   .page-header__background-image {
@@ -54,8 +51,11 @@
     }
   }
 
-  .download {
-    order: 1;
+  .page-header__background-image-hand {
+    width: 700;
+    height: 545px;
+    top: 184px;
+    background-size: cover;
   }
 }
 
@@ -71,5 +71,10 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center 0;
     background-size: cover;
+  }
+
+  .page-header__background-image-hand {
+    width: 1050px;
+    height: 645px;
   }
 }
