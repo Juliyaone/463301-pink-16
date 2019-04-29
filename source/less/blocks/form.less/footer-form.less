@@ -1,172 +1,92 @@
 .footer-form__wrapper {
+  display: flex;
   width: 280px;
   padding-right: 20px;
   padding-left: 20px;
   margin: auto;
 }
 
-.social__list {
+.footer-form__wrapper-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 178px;
-  height: 51px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 38px;
+  align-items: center;
+  width: 280px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 34px;
+  padding-bottom: 50px;
+  height: 205px;
+  margin: auto;
 }
 
-.social__item {
-  position: relative;
-  display: block;
-  width: 45px;
-  height: 45px;
-  border: 3px solid #e9ebec;
-  border-radius: 50%;
-  background-color: #ffffff;
+.footer-form__wrapper-flex .social__list-index {
+  left: 0;
 }
 
-.social__item-twitter::before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  display: block;
-  width: 18px;
-  height: 14px;
-  color: #d22856;
-  background-image: url("../img/icon-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__item-facebook::before {
-  content: "";
-  position: absolute;
-  left: 17px;
-  top: 12px;
-  display: block;
-  width: 11px;
-  height: 18px;
-  color: #d22856;
-  background-image: url("../img/icon-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.social__item-youtube::before {
-  content: "";
-  position: absolute;
-  left: 17px;
-  top: 15px;
-  display: block;
-  width: 15px;
-  height: 14px;
-  color: #d22856;
-  background-image: url("../img/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.footer-form__developer {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 35px;
-  vertical-align: middle;
-  color: #283645;
-  padding: 0;
-  margin: 0;
-  margin-right: 20px;
-}
-
-.footer-form__img-logo {
-  padding-top: 60px;
-  padding-left: 66px;
-  padding-right: 66px;
-  padding-bottom: 35px;
-}
-
-.footer-form__developer-box {
-  display: flex;
-  width: 130px;
-  height: 35px;
-  padding-left: 75px;
-  padding-right: 75px;
-  padding-bottom: 40px;
+.footer-form__wrapper-flex .footer-index__developer-text {
+  line-height: 30px;
 }
 
 @media (min-width: 660px) {
   .footer-form__wrapper {
-    display: flex;
+    width: 660px;
+  }
+
+  .footer-form__wrapper-flex {
+    flex-direction: row;
     width: 620px;
-    height: 177px;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0;
   }
 
-  .footer-form__logo-wrapper {
-    width: 147px;
-    height: 177px;
-    padding: 0;
+  .footer-form__wrapper-flex .social__list-index {
+    left: -10px;
   }
 
-  .footer-form__img-logo {
-    width: 147px;
-    height: 40px;
-    padding: 0;
-    padding-top: 86px;
+  .footer-form__wrapper-flex .footer-index__img-logo {
+    padding-top: 30px;
+    padding-bottom: 48px;
   }
 
-  .social__list {
-    width: 178px;
-    height: 177px;
-    margin: 0;
-    padding-top: 90px;
-    margin-right: 94px;
-    margin-left: 74px;
-  }
-
-  .footer-form__developer-box {
-    width: 130px;
-    height: 177px;
-    padding: 0;
-    padding-top: 103px;
-  }
-
-  .footer-form__developer-logo {
-    width: 27px;
-    height: 34px;
+  .footer-form__wrapper-flex .footer-index__developer-text {
+    line-height: 22px;
   }
 }
 
 @media (min-width: 1200px) {
   .footer-form__wrapper {
-    justify-content: space-between;
+    width: 1200px;
+  }
+
+  .footer-form__wrapper-flex {
+    flex-direction: row;
     width: 940px;
-    height: 197px;
+    height: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0;
   }
 
-  .footer-form__img-logo {
-    padding-top: 70px;
+  .footer-form__wrapper-flex .footer-index__img-logo {
+    padding-top: 63px;
+    padding-bottom: 63px;
   }
 
-  .social__list {
-    padding-top: 74px;
-    margin-left: 70px;
-    margin-right: 54px;
+  .footer-form__wrapper-flex .social__list-index {
+    left: -4px;
+    padding-top: 36px;
   }
 
-  .footer-form__developer-box {
-    width: 151px;
-    height: 197px;
-    padding-top: 85px;
+  .footer-form__wrapper-flex .footer-index__developer-box {
+    line-height: 28px;
+    padding-top: 77px;
   }
 
-  .footer-form__developer {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 34px;
-    vertical-align: middle;
-    margin-right: 15px;
+  .footer-form__wrapper-flex .footer-index__developer-text {
+    line-height: 24px;
+    padding-top: 0;
   }
 }

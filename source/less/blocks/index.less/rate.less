@@ -1,16 +1,28 @@
 .rate__wrapper {
   position: relative;
   width: 320px;
-  height: 379px;
+  height: 470px;
   background-color: #f2f2f2;
   margin: auto;
-  padding-top: 65px;
   overflow: hidden;
+}
+
+.rate__wrapper::before {
+  position: absolute;
+  content: "";
+  top: -69px;
+  left: -1px;
+  width: 321px;
+  height: 100px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
 }
 
 .rate__table {
   position: absolute;
-  left: -255px;
+  left: -258px;
+  top: 90px;
   width: 836px;
   height: 280px;
   background-color: #ffffff;
@@ -25,8 +37,40 @@
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   border-top: 2px solid #e5e5e5;
-  border-bottom: 2px solid #283645;
+  border-bottom: 2px solid #e5e5e5;
   padding: 0;
+}
+
+.rate__table-header:nth-child(3) {
+  position: relative;
+  z-index: 1;
+}
+
+.rate__table-header:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 80px;
+  left: -2px;
+  top: 0;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.rate__table-header:nth-child(3)::after {
+  position: absolute;
+  content: "хит";
+  width: 113px;
+  height: 123px;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  transform: rotate(-45deg);
+  color: #ffffff;
+  z-index: 2;
 }
 
 .rate__table-header--title {
@@ -51,26 +95,26 @@
 
 .rate__row {
   width: 836px;
-  height: 59px;
+  height: 60px;
   border: 2px solid #e5e5e5;
 }
 
 .rate__row--header {
   width: 836px;
-  height: 98px;
+  height: 100px;
   padding: 0;
   margin: 0;
 }
 
 .rate__row--date {
   width: 276px;
-  height: 59px;
   border: 2px solid #e5e5e5;
 }
 
 .rate__row-date-text {
   color: black;
   font-size: 14px;
+  line-height: 30px;
   font-weight: 600;
   text-align: left;
   text-transform: uppercase;
@@ -78,8 +122,9 @@
   padding-left: 20px;
 }
 
-.rate__row--date-icon {
-  padding-right: 15px;
+.rate__row--date-icon-yes,
+.rate__row--date-icon-no {
+  padding-right: 18px;
 }
 
 .rate__row-date-flex {
@@ -108,7 +153,13 @@
   .rate__wrapper {
     position: relative;
     width: 660px;
-    height: 325px;
+    height: 375px;
+  }
+
+  .rate__wrapper::before {
+    top: -42px;
+    left: -1px;
+    width: 661px;
   }
 
   .rate__table {
@@ -144,12 +195,12 @@
 
   .rate__row {
     width: 620px;
-    height: 45px;
+    height: 46px;
   }
 
   .rate__row--date {
     width: 152px;
-    height: 45px;
+    height: 40px;
   }
 
   .rate__row-date-flex {
@@ -160,10 +211,11 @@
     display: none;
   }
 
-  .rate__row--date-icon {
+  .rate__row--date-icon-yes,
+  .rate__row--date-icon-no {
     margin: auto;
-    padding-right: 61px;
-    padding-left: 61px;
+    padding-top: 6px;
+    padding-left: 63px;
   }
 
   .rate__row--date-table-descktop {
@@ -186,18 +238,39 @@
     border: none;
     padding: 0;
   }
+
+  .rate__table-header:nth-child(3)::before {
+    width: 60px;
+    height: 70px;
+    left: 0;
+    top: 0;
+  }
+
+  .rate__table-header:nth-child(3)::after {
+    width: 74px;
+    height: 71px;
+    left: 0;
+    top: 0;
+  }
 }
 
 @media (min-width: 1200px) {
   .rate__wrapper {
     position: relative;
     width: 1200px;
-    height: 379px;
+    height: 520px;
+  }
+
+  .rate__wrapper::before {
+    top: 0;
+    left: -1px;
+    width: 1200px;
   }
 
   .rate__table {
     position: absolute;
     left: 129px;
+    top: 150px;
     width: 942px;
     height: 280px;
   }
@@ -222,15 +295,16 @@
 
   .rate__row {
     width: 942px;
-    height: 60px;
+    height: 56px;
   }
 
   .rate__row--date {
     width: 232px;
-    height: 60px;
+    height: 56px;
   }
 
-  .rate__row--date-icon {
+  .rate__row--date-icon-yes,
+  .rate__row--date-icon-no {
     margin: auto;
     padding-right: 100px;
     padding-left: 100px;
@@ -248,5 +322,19 @@
     background-color: #f2f2f2;
     border: none;
     padding: 0;
+  }
+
+  .rate__table-header:nth-child(3)::before {
+    width: 74px;
+    height: 73px;
+    left: 0;
+    top: 0;
+  }
+
+  .rate__table-header:nth-child(3)::after {
+    width: 112px;
+    height: 109px;
+    left: 0;
+    top: 0;
   }
 }

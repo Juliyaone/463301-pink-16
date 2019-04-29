@@ -7,7 +7,6 @@
 }
 
 .page-header__background-image {
-  position: relative;
   width: 320px;
   min-height: 462px;
   background-color: #1d2631;
@@ -36,7 +35,6 @@
 @media (min-width: 660px) {
   .page-header {
     width: 660px;
-    height: 729px;
   }
 
   .page-header__background-image {
@@ -51,30 +49,39 @@
     }
   }
 
+  .page-header__background-image img {
+    max-width: none;
+  }
+
   .page-header__background-image-hand {
-    width: 700;
+    width: 700px;
     height: 545px;
     top: 184px;
-    background-size: cover;
+    right: 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-header {
     width: 1200px;
-    height: auto;
   }
 
   .page-header__background-image {
     width: 1200px;
     min-height: 854px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 0;
-    background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+      background-position: center 0;
+    }
   }
 
   .page-header__background-image-hand {
     width: 1050px;
     height: 645px;
+    left: 145px;
+    top: 210px;
   }
 }
