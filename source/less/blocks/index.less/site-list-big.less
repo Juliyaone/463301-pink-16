@@ -1,0 +1,137 @@
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-list__item {
+  position: relative;
+  width: 100%;
+  background-color: #283645;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #485461;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 31px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  z-index: 3;
+}
+
+.site-list__item:first-child {
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site-list__item a:hover {
+  color: #d22856;
+}
+
+.site-list__item a:focus {
+  outline: none;
+  color: #d22856;
+}
+
+.site-list__item a:active {
+  color: #d22856;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .site-list__item-box {
+    width: 620px;
+  }
+
+  .site-list__item:first-child {
+    padding-top: 26px;
+    padding-bottom: 44px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .site-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-transform: capitalize;
+    width: auto;
+    border: none;
+    margin-right: 80px;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 110px;
+    vertical-align: middle;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .site-list__item:first-child {
+    width: 277px;
+    height: 110px;
+    border: none;
+    margin-right: 172px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .site-list__item-capslock {
+    text-transform: uppercase;
+  }
+
+  .site-list__item-box {
+    width: 147px;
+    height: 110px;
+    padding-left: 130px;
+  }
+
+  .site-list__item a:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  .site-list__item--active {
+    position: relative;
+  }
+
+  .site-list__item--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    left: 0;
+    height: 2px;
+    background: #ffffff;
+  }
+
+  .logo-glasses-star {
+    display: inline-block;
+  }
+
+  .logo-white-glasses {
+    display: none;
+  }
+
+  .star-desktop {
+    fill: #d22856;
+  }
+}
