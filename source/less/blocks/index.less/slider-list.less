@@ -70,6 +70,10 @@
   cursor: pointer;
 }
 
+.slider__toggle-active:focus::before {
+  outline: none;
+}
+
 .slider__toggle::before {
   content: "";
   position: absolute;
@@ -81,14 +85,18 @@
   vertical-align: middle;
 }
 
-.slider__toggle:hover::before,
+.slider__toggle:hover::before {
+  border: 3px solid #7e868f;
+}
+
 .slider__toggle:focus::before {
-  border-color: #7e868f;
+  outline: none;
+  border: 3px solid #7e868f;
 }
 
 .slider__toggle:active::before {
-  border-color: #e9ebec;
-  outline-offset: 5px;
+  outline: none;
+  border: 3px solid #e9ebec;
 }
 
 @media (min-width: 660px) {
