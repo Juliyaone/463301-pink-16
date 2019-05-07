@@ -4,6 +4,7 @@
   width: 280px;
   height: 36px;
   line-height: 36px;
+  align-items: center;
   vertical-align: middle;
   flex-wrap: nowrap;
   padding-top: 12px;
@@ -13,16 +14,20 @@
 }
 
 .site-list__item-logo {
-  width: 80px;
-  height: 41px;
+  width: 76px;
+  height: 22px;
 }
 
 .site-list__item-logo-icon {
-  width: 147px;
-  height: 41px;
+  width: 76px;
+  height: 22px;
   fill: #ffffff;
-  margin-left: -70px;
-  margin-top: -10px;
+  margin-left: 0;
+  margin-top: 7px;
+}
+
+.site-list__item-logo-icon-tablet {
+  display: none;
 }
 
 .logo-glasses-star {
@@ -80,7 +85,6 @@
   border: none;
 }
 
-
 .site-list__item-toggle {
   display: block;
   width: 50px;
@@ -128,10 +132,33 @@
   }
 
   .site-list__item-logo-icon {
+    display: none;
+  }
+
+  .site-list__item-logo-icon-tablet {
+    display: flex;
     width: 147px;
     height: 41px;
+    fill: #ffffff;
     margin-left: 0;
     margin-top: 0;
+  }
+
+  .site-list__item-logo:hover .site-list__item-logo-icon-tablet {
+    fill: #d22856;
+  }
+
+  .site-list__item-logo:focus {
+    outline: none;
+  }
+
+  .site-list__item-logo:focus .site-list__item-logo-icon-tablet {
+    fill: #d22856;
+  }
+
+  .site-list__item-logo:active .site-list__item-logo-icon-tablet {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 
   .site-list__item-toggle {
@@ -159,11 +186,8 @@
     height: 110px;
   }
 
-  .site-list__item-logo-icon {
-    width: 149px;
-    height: 42px;
-    padding-top: 27px;
-    padding-bottom: 43px;
+  .site-list__item-logo-icon-tablet {
+    display: none;
   }
 
   .site-list__small {

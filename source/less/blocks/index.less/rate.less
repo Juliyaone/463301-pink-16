@@ -41,18 +41,13 @@
   padding: 0;
 }
 
-.rate__table-header:nth-child(3) {
-  position: relative;
-  z-index: 1;
-}
-
 .rate__table-header:nth-child(3)::before {
   position: absolute;
   content: "";
   width: 75px;
   height: 80px;
-  left: -2px;
-  top: 0;
+  left: 279px;
+  top: 1px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -64,8 +59,8 @@
   content: "хит";
   width: 113px;
   height: 123px;
-  left: 0;
-  top: 0;
+  left: 279px;
+  top: 2px;
   text-transform: uppercase;
   font-weight: 600;
   transform: rotate(-45deg);
@@ -242,14 +237,15 @@
   .rate__table-header:nth-child(3)::before {
     width: 60px;
     height: 70px;
-    left: 0;
+    background-image: url("../img/bg-hit-tablet.svg");
+    left: 308px;
     top: 0;
   }
 
   .rate__table-header:nth-child(3)::after {
     width: 74px;
     height: 71px;
-    left: 0;
+    left: 308px;
     top: 0;
   }
 }
@@ -327,14 +323,15 @@
   .rate__table-header:nth-child(3)::before {
     width: 74px;
     height: 73px;
-    left: 0;
+    background-image: url("../img/bg-hit.svg");
+    left: 470px;
     top: 0;
   }
 
   .rate__table-header:nth-child(3)::after {
     width: 112px;
     height: 109px;
-    left: 0;
+    left: 470px;
     top: 0;
   }
 }

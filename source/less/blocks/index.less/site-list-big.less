@@ -7,10 +7,15 @@
 .site-list__item-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.site-list__item-logo-icon-desktop {
+  display: none;
 }
 
 .site-list__item {
@@ -61,6 +66,10 @@
   .site-list__item:first-child {
     padding-top: 26px;
     padding-bottom: 44px;
+  }
+
+  .site-list__item-logo-icon-desktop {
+    display: none;
   }
 }
 
@@ -123,15 +132,29 @@
     background: #ffffff;
   }
 
-  .logo-glasses-star {
-    display: inline-block;
+  .site-list__item-logo-icon-desktop {
+    display: flex;
+    width: 149px;
+    height: 42px;
+    fill: #ffffff;
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 
-  .logo-white-glasses {
-    display: none;
-  }
-
-  .star-desktop {
+  .site-list__item-logo:hover .site-list__item-logo-icon-desktop {
     fill: #d22856;
+  }
+
+  .site-list__item-logo:focus {
+    outline: none;
+  }
+
+  .site-list__item-logo:focus .site-list__item-logo-icon-desktop {
+    fill: #d22856;
+  }
+
+  .site-list__item-logo:active .site-list__item-logo-icon-desktop {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
