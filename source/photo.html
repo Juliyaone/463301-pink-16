@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial=scale=1">
+    <title>Приложение «Pink»</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+  </head>
+  <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header--photo">
+<nav class="main-nav main-nav--opened main-nav--nojs">
+        <ul class="main-nav__small-list">
+          <li class="site-list__small">
+            <div class="site-list__small-box">
+            <a class="site-list__item-logo" href="index.html" tabindex="0">
+              <svg class="site-list__item-logo-icon" width="147" height="41" role="img">
+                <title>Логотип приложения</title>
+                <use xlink:href="#logo-pink-white-mobile"></use>
+              </svg>
+              <svg class="site-list__item-logo-icon-tablet" width="147" height="41" role="img">
+                <title>Логотип приложения</title>
+                <use xlink:href="#logo-pink-white-tablet"></use>
+              </svg>
+            </a>
+                <button class="site-list__item-toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+                  <svg class="site-list__item-toggle-icon" width="50" height="24" role="img">
+                    <title>Меню</title>
+                    <use xlink:href="#icon-menu-burger"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+              <li class="site-list__item">
+                <div class="site-list__item-box">
+                  <a class="site-list__item-logo" href="index.html" tabindex="0">
+                    <svg class="site-list__item-logo-icon" width="147" height="41" role="img">
+                      <title>Логотип приложения</title>
+                      <use xlink:href="#logo-pink-white-mobile"></use>
+                    </svg>
+                    <svg class="site-list__item-logo-icon-tablet" width="147" height="41" role="img">
+                      <title>Логотип приложения</title>
+                      <use xlink:href="#logo-pink-white-tablet"></use>
+                    </svg>
+                    <svg class="site-list__item-logo-icon-desktop" width="147" height="41" role="img">
+                      <title>Логотип приложения</title>
+                      <use xlink:href="#logo-pink-white-desktop"></use>
+                    </svg>
+                  </a>
+                  <button class="site-list__item-cross">
+                    <svg class="site-list__item-cross-icon" width="24" height="24" role="img">
+                      <title>Закрыть меню</title>
+                      <use xlink:href="#icon-menu-cross"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class=" site-list__item--active" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/"><span class="site-list__item-capslock">Html</span> academy</a>
+              </li>
+          </ul>
+          <div class="page-header__background-image">
+            <h1 class="page-header-photo__title">Фотографии пользователей</h1>
+          </div>
+      </nav>
+    </header>
+        <main>
+          <section class="photo-reviews">
+            <h2 class="visually-hidden">Отзывы о приложении «Pink»</h2>
+            <div class="photo-reviews__title-wrapper">
+              <p class="photo-reviews__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+            </div>
+
+                  <div class="photo-reviews__panorama-wrapper">
+                    <a class="photo-reviews__panorama-photo">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
+
+
+                        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                        <img class="photo-reviews__panorama-photo-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото Анны">
+                      </picture>
+                    </a>
+                  </div>
+
+                    <div class="photo-reviews__panorama-blockquote-wrapper">
+                      <blockquote class="photo-reviews__panorama-blockquote">
+                        <cite class="photo-reviews__panorama-user">Анна</cite>
+                        <span class="photo-reviews__panorama-times">(5 минут назад)</span>
+                        <p class="photo-reviews__panorama-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                        <div class="photo-reviews__panorama-like">
+                          <a class="photo-reviews__panorama-link" href="#">
+                            <svg class="photo-reviews__panorama-icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                            </svg>
+                            <div class="photo-reviews__panorama-small-wrapper">
+                              <span class="photo-reviews__panorama-like-text">Нравится:</span>
+                              <span class="photo-reviews__panorama-like-digit">215</span>
+                            </div>
+                          </a>
+                        </div>
+                      </blockquote>
+                    </div>
+                  <ul class="photo-reviews__list">
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
+                        <div class="photo-reviews__img">
+                          <a class="photo-reviews__photo">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
+                              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото Левона">
+                            </picture>
+                          </a>
+                        </div>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Левон</cite>
+                          <span class="photo-reviews__times">(5 часов назад)</span>
+                          <p class="photo-reviews__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <a class="photo-reviews__link" href="#">
+                          <svg class="photo-reviews__icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                          </svg>
+                          <div class="photo-reviews__small-wrapper">
+                            <span class="photo-reviews__like">Нравится:</span>
+                            <span class="photo-reviews__like-digit">356</span>
+                          </div>
+                        </a>
+                        </blockquote>
+                      </div>
+                    </li>
+
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
+                        <div class="photo-reviews__img">
+                          <a class="photo-reviews__photo">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                              <source type="image/webp"  media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
+                              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото Антона">
+                            </picture>
+                          </a>
+                        </div>
+                      <blockquote class="photo-reviews__blockquote">
+                        <cite class="photo-reviews__user">Антон</cite>
+                        <span class="photo-reviews__times">(12 часов назад)</span>
+                        <p class="photo-reviews__comment">Соседи будут рады!</p>
+                      <a class="photo-reviews__link" href="#">
+                        <svg class="photo-reviews__icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                          </svg>
+                          <div class="photo-reviews__small-wrapper">
+                            <span class="photo-reviews__like">Нравится:</span>
+                            <span class="photo-reviews__like-digit">666</span>
+                          </div>
+                      </a>
+                      </blockquote>
+                    </div>
+                    </li>
+
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
+                        <div class="photo-reviews__img">
+                          <a class="photo-reviews__photo">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
+                              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото Бориса">
+                            </picture>
+                          </a>
+                        </div>
+                      <blockquote class="photo-reviews__blockquote">
+                        <cite class="photo-reviews__user">Борис</cite>
+                        <span class="photo-reviews__times">(20 часов назад)</span>
+                        <p class="photo-reviews__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                      <a class="photo-reviews__link" href="#">
+                        <svg class="photo-reviews__icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                          </svg>
+                          <div class="photo-reviews__small-wrapper">
+                            <span class="photo-reviews__like">Нравится:</span>
+                            <span class="photo-reviews__like-digit">215</span>
+                          </div>
+                      </a>
+                      </blockquote>
+                    </div>
+                    </li>
+
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
+                        <div class="photo-reviews__img">
+                          <a class="photo-reviews__photo">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
+                              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото Сергея">
+                            </picture>
+                          </a>
+                        </div>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Сергей</cite>
+                          <span class="photo-reviews__times">(25 часов назад)</span>
+                          <p class="photo-reviews__comment">Самая кубанская в мире!</p>
+                        <a class="photo-reviews__link" href="#">
+                          <svg class="photo-reviews__icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                          </svg>
+                          <div class="photo-reviews__small-wrapper">
+                            <span class="photo-reviews__like">Нравится:</span>
+                            <span class="photo-reviews__like-digit">4</span>
+                          </div>
+                        </a>
+                      </blockquote>
+                      </div>
+                    </li>
+
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
+                        <div class="photo-reviews__img">
+                          <a class="photo-reviews__photo">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, photo-pov-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, photo-pov-mobile@2x.webp 2x">
+
+                              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, photo-pov-tablet@2x.jpg 2x">
+                              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото Максима">
+                            </picture>
+                          </a>
+                        </div>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Максим</cite>
+                          <span class="photo-reviews__times">(40 часов назад)</span>
+                          <p class="photo-reviews__comment">Где снег-то?</p>
+                        <a class="photo-reviews__link" href="#">
+                          <svg class="photo-reviews__icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                          </svg>
+                          <div class="photo-reviews__small-wrapper">
+                            <span class="photo-reviews__like">Нравится:</span>
+                            <span class="photo-reviews__like-digit">150</span>
+                          </div>
+                        </a>
+                      </blockquote>
+                      </div>
+                    </li>
+
+                    <li class="photo-reviews__item">
+                      <div class="photo-reviews__wrapper">
+                        <div class="photo-reviews__img">
+                          <a class="photo-reviews__photo">
+                            <picture>
+                              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, photo-wing-tablet@2x.webp 2x">
+                              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, photo-wing-mobile@2x.webp 2x">
+
+                              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, photo-wing-tablet@2x.jpg 2x">
+                              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото Надежды">
+                            </picture>
+                          </a>
+                        </div>
+                        <blockquote class="photo-reviews__blockquote">
+                          <cite class="photo-reviews__user">Надежда</cite>
+                          <span class="photo-reviews__times">(45 часов назад)</span>
+                          <p class="photo-reviews__comment">Всем GM и взаимные лайки!</p>
+                        <a class="photo-reviews__link" href="#">
+                          <svg class="photo-reviews__icon" width="13" height="12" role="img">
+                              <title>Закрыть меню</title>
+                              <use xlink:href="#icon-heart"></use>
+                          </svg>
+                          <div class="photo-reviews__small-wrapper">
+                            <span class="photo-reviews__like">Нравится:</span>
+                            <span class="photo-reviews__like-digit">2560</span>
+                          </div>
+                        </a>
+                      </blockquote>
+                    </div>
+                    </li>
+                </ul>
+          </section>
+
+          <section class="photo-editor">
+            <h3 class="visually-hidden">Редактор для фото</h3>
+              <div class="photo-editor__title-wrapper">
+                <p class="photo-editor__title">Затмите их всех!</p>
+                <p class="photo-editor__title">Выкладывайте все, что накопилось в телефоне!</p>
+              </div>
+
+              <div class="photo-editor__wrapper">
+                <form class="photo-editor__form" method="get" action="https://echo.htmlacademy.ru">
+                  <div class="photo-editor__img-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                      <img class="photo-editor__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Образец фото">
+                    </picture>
+                  </div>
+                  <div class="photo-editor__form-flex">
+                  <div class="photo-editor__box-wrapper">
+                    <ul class="photo-editor__list">
+                      <li class="photo-editor__item">
+                        <a class="photo-editor__item-link" href="#" aria-label="Обрезать фото" tabindex="0">
+                          <svg class="photo-editor__item-link-icon" width="48" height="48" role="img">
+                            <title>Обрезать</title>
+                            <use xlink:href="#icon-editor-crop"></use>
+                          </svg>
+                          <div class="photo-editor__line-one"></div>
+                        </a>
+                      </li>
+                      <li class="photo-editor__item">
+                        <a class="photo-editor__item-link" href="#" aria-label="Яркость фото" tabindex="0">
+                          <svg class="photo-editor__item-link-icon" width="48" height="48" role="img">
+                            <title>Яркость</title>
+                            <use xlink:href="#icon-editor-fill"></use>
+                          </svg>
+                          <div class="photo-editor__line-two"></div>
+                        </a>
+                      </li>
+                      <li class="photo-editor__item">
+                        <a class="photo-editor__item-link" href="#" aria-label="Контрастность фото" tabindex="0">
+                          <svg class="photo-editor__item-link-icon" width="32" height="32" role="img">
+                            <title>Контрастность</title>
+                            <use xlink:href="#icon-editor-contrast"></use>
+                          </svg>
+                          <div class="photo-editor__line-three"></div>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="photo-editor__range-controls-ring"></div>
+                  </div>
+                    <div class="photo-editor__button">
+                      <button class="photo-editor__button-upload" value="Запостить"><span class="photo-editor__button-text">Запостить</span></button>
+                      <button class="photo-editor__button-cansel" value="Отмена"><span class="photo-editor__button-text">Отмена</span></button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </section>
+        </main>
+
+<footer class="page-footer">
+      <section>
+        <h2 class="visually-hidden">Подвал сайта</h2>
+          <div class="footer-photo__wrapper">
+            <div class="footer-photo__wrapper-flex">
+              <a class="footer-index__img-logo" href="#">
+                <svg class="footer-index__img-logo-svg-tablet" width="146" height="45" role="img">
+                  <title>Логотип приложения</title>
+                  <use xlink:href="#logo-pink-blue-mobile"></use>
+                </svg>
+                <svg class="footer-index__img-logo-svg-desktop" width="146" height="45" role="img">
+                  <title>Логотип приложения</title>
+                  <use xlink:href="#logo-pink-blue-desktop"></use>
+                </svg>
+              </a>
+              <div class="footer-index__social">
+              <ul class="social__list-index">
+                <li class="social__item-index">
+                  <a class="social__item-twitter-index" href="https://twitter.com/" aria-label="Твиттер"><span class="visually-hidden">Твиттер</span></a>
+                </li>
+                <li class="social__item-index">
+                  <a class="social__item-facebook-index" href="https://www.facebook.com/" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a>
+                </li>
+                <li class="social__item-index">
+                  <a class="social__item-youtube-index" href="https://www.youtube.com/" aria-label="Ютуб"><span class="visually-hidden">Ютуб</span></a>
+                </li>
+              </ul>
+              </div>
+                <div class="footer-index__developer-box">
+                  <span class="footer-index__developer-text">Разработано</span>
+                  <a class="footer-index__developer-logo" href="https://htmlacademy.ru/">
+                    <svg class="footer-index__developer-logo-svg" width="27" height="34" role="img">
+                      <title>Логотип разработчика сайта</title>
+                      <use xlink:href="#logo-htmlacademy"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+      </footer>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
