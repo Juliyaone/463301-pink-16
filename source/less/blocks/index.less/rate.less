@@ -1,18 +1,26 @@
+.rate {
+  position: relative;
+  top: -25px;
+  width: 100%;
+  height: 530px;
+  background-color: #f2f2f2;
+  z-index: 1;
+}
+
 .rate__wrapper {
   position: relative;
   width: 320px;
-  height: 470px;
-  background-color: #f2f2f2;
+  height: 530px;
   margin: auto;
   overflow: hidden;
 }
 
-.rate__wrapper::before {
+.rate::before {
   position: absolute;
   content: "";
-  top: -69px;
+  top: -15px;
   left: -1px;
-  width: 321px;
+  width: 100%;
   height: 100px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -22,7 +30,7 @@
 .rate__table {
   position: absolute;
   left: -258px;
-  top: 90px;
+  top: 145px;
   width: 836px;
   height: 280px;
   background-color: #ffffff;
@@ -145,10 +153,19 @@
 }
 
 @media (min-width: 660px) {
+  .rate {
+    top: -15px;
+    height: 406px;
+  }
+
+  .rate::before {
+    top: -11;
+  }
+
   .rate__wrapper {
     position: relative;
     width: 660px;
-    height: 375px;
+    height: 400px;
   }
 
   .rate__wrapper::before {
@@ -160,6 +177,7 @@
   .rate__table {
     position: absolute;
     left: 20px;
+    top: 119px;
     width: 620px;
     height: 220px;
   }
@@ -250,25 +268,31 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .rate__wrapper {
-    position: relative;
-    width: 1200px;
-    height: 520px;
+@media (min-width: 960px) {
+  .rate {
+    height: 530px;
   }
 
-  .rate__wrapper::before {
+  .rate::before {
+    height: 90px;
     top: 0;
-    left: -1px;
-    width: 1200px;
+    background-size: 100% 90px;
+  }
+
+  .rate__wrapper {
+    position: relative;
+    width: 100%;
+    height: 540px;
   }
 
   .rate__table {
     position: absolute;
-    left: 129px;
-    top: 150px;
+    left: 0;
+    right: 0;
+    top: 155px;
     width: 942px;
     height: 280px;
+    margin: 0 auto;
   }
 
   .rate__row--header {
