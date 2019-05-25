@@ -1,6 +1,6 @@
 .contacts__wrapper {
   .wrapper;
-  padding-top: 45px;
+  padding-top: 16px;
   padding-bottom: 25px;
 }
 
@@ -52,7 +52,8 @@
 }
 
 .contact__tel:focus {
-  outline: none;
+  outline: solid 2px rgba(77, 144, 254, 0.5);
+  outline-offset: 5px;
 }
 
 .contact__tel:focus .contacts__tel-mobile {
@@ -83,7 +84,8 @@
 }
 
 .contact__email:focus {
-  outline: none;
+  outline: solid 2px rgba(77, 144, 254, 0.5);
+  outline-offset: 5px;
 }
 
 .contact__email:focus .contacts__email-text {
@@ -114,7 +116,8 @@
 }
 
 .contact__address:focus {
-  outline: none;
+  outline: solid 2px rgba(77, 144, 254, 0.5);
+  outline-offset: 5px;
 }
 
 .contact__address:focus .contact__address-text {
@@ -129,7 +132,7 @@
 
 .contacts__wrapper-cart {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 200px;
   background-color: #f2f2f2;
   margin: auto;
@@ -139,19 +142,20 @@
 
 .contact__cart {
   position: relative;
-  top: -450px;
+  width: 100%;
   z-index: 1;
 }
 
 .contacts__wrapper-cart::before {
   position: absolute;
   content: "";
-  top: -50px;
-  width: 320px;
-  height: 100px;
+  top: 0;
+  width: 100%;
+  height: 60px;
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 60px;
   z-index: 2;
 }
 
@@ -163,10 +167,11 @@
   .contacts__wrapper {
     width: 570px;
     height: 360px;
-    padding-top: 50px;
+    padding-top: 33px;
     padding-bottom: 0;
     padding-left: 45px;
     padding-right: 45px;
+    margin: 0 auto;
   }
 
   .contacts__title-wrapper {
@@ -188,12 +193,12 @@
 
   .contact__cart {
     top: -315px;
-    width: 660px;
+    width: 100%;
   }
 
   .contact__box:nth-child(1),
   .contact__box:nth-child(2) {
-    padding-bottom: 8px;
+    padding-bottom: 5px;
   }
 
   .contact__box:nth-child(3) .contact__text {
@@ -212,7 +217,7 @@
   }
 
   .contacts__wrapper-cart {
-    width: 660px;
+    width: 100%;
     height: 375px;
     background-color: #f2f2f2;
     margin: auto;
@@ -222,39 +227,40 @@
   .contacts__wrapper-cart::before {
     position: absolute;
     content: "";
-    top: -17px;
-    width: 660px;
-    height: 100px;
+    top: 0;
+    width: 100%;
+    height: 70px;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100% 70px;
     z-index: 2;
   }
 
   .contact__text {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .contacts__wrapper {
     width: 890px;
     height: 370px;
     padding: 0;
-    padding-left: 155px;
-    padding-right: 155px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
   }
 
   .contacts__wrapper-cart::before {
-    width: 1200px;
-    height: 125px;
+    width: 100%;
+    height: 80px;
     top: 0;
-    background-size: cover;
+    background-size: 100% 80px;
   }
 
   .contacts__title-wrapper {
-    padding-top: 70px;
+    padding-top: 50px;
     margin-bottom: 60px;
   }
 
@@ -283,16 +289,16 @@
   }
 
   .contacts__wrapper-cart {
-    width: 1200px;
-    height: 500px;
+    width: 100%;
+    height: 485px;
     background-color: #f2f2f2;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
   }
 
   .contact__cart {
-    width: 1200px;
-    top: -275px;
+    width: 100%;
+    top: 0;
   }
 
   .contact__box:nth-child(3) .contact__text {
