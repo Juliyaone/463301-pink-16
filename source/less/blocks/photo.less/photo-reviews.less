@@ -40,18 +40,26 @@
 
 .photo-reviews__panorama-wrapper {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 137px;
   background-color: #f2f2f2;
-  margin: auto;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .photo-reviews__panorama-photo {
+  width: 320px;
   height: 137px;
   margin: 0;
   padding: 0;
-  float: left;
+}
+
+.photo-reviews__panorama-photo-img {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .photo-reviews__panorama-photo::before {
@@ -141,19 +149,16 @@
   margin: 0;
 }
 
-.photo-reviews__panorama-link:focus .photo-reviews__panorama-like-text {
-  color: #283645;
+.photo-reviews__panorama-link:focus {
+  outline: solid 2px rgba(77, 144, 254, 0.5);
+  outline-offset: 5px;
 }
+
 
 .photo-reviews__panorama-link {
   outline: none;
   display: flex;
   text-decoration: none;
-}
-
-.photo-reviews__panorama-link:focus .photo-reviews__panorama-icon {
-  fill: #283645;
-  stroke-width: 5px;
 }
 
 .photo-reviews__panorama-icon {
@@ -233,8 +238,16 @@
   display: flex;
 }
 
+.photo-reviews__small-wrapper:hover {
+  border-bottom: 1px solid @rose;
+}
+
 .photo-reviews__panorama-small-wrapper {
   display: flex;
+}
+
+.photo-reviews__panorama-small-wrapper:hover {
+  border-bottom: 1px solid @rose;
 }
 
 .photo-reviews__like-digit {
@@ -251,8 +264,9 @@
   margin: 0;
 }
 
-.photo-reviews__link:focus .photo-reviews__like-digit {
-  color: #283645;
+.photo-reviews__link:focus {
+  outline: solid 2px rgba(77, 144, 254, 0.5);
+  outline-offset: 5px;
 }
 
 .photo-reviews__like {
@@ -268,9 +282,6 @@
   margin: 0;
 }
 
-.photo-reviews__link:focus .photo-reviews__like {
-  color: #283645;
-}
 
 .photo-reviews__panorama-like-digit {
   font-size: 12px;
@@ -286,10 +297,6 @@
   margin: 0;
 }
 
-.photo-reviews__panorama-link:focus .photo-reviews__panorama-like-digit {
-  color: #283645;
-}
-
 .photo-reviews__link {
   display: flex;
   justify-content: flex-start;
@@ -300,9 +307,6 @@
   outline: none;
 }
 
-.photo-reviews__link:focus .photo-reviews__icon {
-  fill: #283645;
-}
 
 .photo-reviews__blockquote a {
   text-decoration: none;
@@ -325,22 +329,35 @@
   }
 
   .photo-reviews__panorama-wrapper {
-    width: 660px;
+    width: 100%;
     height: 509px;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
   }
 
-  .photo-reviews__panorama-wrapper img {
+  .photo-reviews__panorama-photo {
+    width: 100%;
+    height: 509px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photo-reviews__panorama-photo-img {
+    width: 100%;
     max-width: none;
-    margin: 0 0 0 -20px;
+    height: 509px;
+    object-fit: cover;
   }
 
   .photo-reviews__panorama-photo::before {
-    top: 60px;
+    top: 58px;
+    right: 18px;
   }
 
   .photo-reviews__panorama-photo::after {
-    top: 65px;
+    top: 63px;
+    right: 37px;
   }
 
   .photo-reviews__panorama-blockquote-wrapper {
@@ -376,12 +393,12 @@
 
   .photo-reviews__panorama-small-wrapper {
     display: flex;
-    width: 107px;
   }
 
   .photo-reviews__panorama-icon {
     order: 3;
     margin: 0;
+    margin-left: 18px;
   }
 
   .photo-reviews__panorama-like-text {
@@ -446,7 +463,7 @@
     width: 240px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .photo-reviews__icon {
@@ -461,7 +478,6 @@
 
   .photo-reviews__small-wrapper {
     display: flex;
-    width: 240px;
   }
 
   .photo-reviews__like-digit {
@@ -477,32 +493,33 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .photo-reviews__title-wrapper {
-    width: 1160px;
+    width: 940px;
     height: 240px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .photo-reviews__title {
     width: 600px;
     padding-top: 90px;
     padding-bottom: 90px;
-    padding-left: 280px;
-    padding-right: 280px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
   }
 
   .photo-reviews__panorama-wrapper {
-    width: 1200px;
+    width: 100%;
     height: 506px;
+    overflow: hidden;
   }
 
-  .photo-reviews__panorama-wrapper img {
-    margin: 0;
-  }
-
-  .photo-reviews__panorama-photo {
-    width: 1200px;
+  .photo-reviews__panorama-photo-img {
+    width: 100%;
     height: 506px;
+    object-fit: cover;
   }
 
   .photo-reviews__panorama-photo::before {
@@ -539,16 +556,10 @@
     width: 241px;
   }
 
-  .photo-reviews__panorama-icon {
-    margin-left: 0;
-  }
-
-  .photo-reviews__panorama-small-wrapper {
-    width: 107px;
-  }
-
   .photo-reviews__list {
     width: 940px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .photo-reviews__item {
