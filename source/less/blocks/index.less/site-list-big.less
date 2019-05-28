@@ -21,6 +21,7 @@
 .site-list__item {
   position: relative;
   width: 100%;
+  min-width: 320px;
   background-color: #283645;
   border-bottom: 1px solid black;
   border-top: 1px solid #485461;
@@ -35,8 +36,9 @@
 }
 
 .site-list__item:first-child {
-  padding-top: 11px;
-  padding-bottom: 15px;
+  height: 23px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .site-list__item a {
@@ -64,9 +66,14 @@
     width: auto;
   }
 
+  .site-list__item {
+    min-width: 660px;
+  }
+
   .site-list__item:first-child {
-    padding-top: 26px;
-    padding-bottom: 44px;
+    height: 41px;
+    padding-top: 25px;
+    padding-bottom: 42px;
   }
 
   .site-list__item-logo-icon-desktop {
@@ -82,6 +89,7 @@
     flex-direction: row;
     text-transform: capitalize;
     width: auto;
+    min-width: auto;
     border: none;
     margin-right: 0;
     margin-left: 79px;
